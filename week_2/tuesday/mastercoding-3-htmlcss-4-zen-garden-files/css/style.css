@@ -47,6 +47,10 @@ abbr {
     text-decoration: none;
 }
 
+abbr:hover {
+    text-decoration: underline;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -59,7 +63,7 @@ a:hover {
 
 header {
     background-image: url('../img/huntington.png');
-    background-size: 100% auto, auto, auto, cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 200px;
     padding: 20px 0px 70px 0px;
@@ -96,10 +100,13 @@ p {
 }
 
 p[role="contentinfo"] {
+    display: block;
     background-color: #7ca57c;
-    width: auto;
+    background-clip: border-box;
+    width: max-content;
     margin: 0;
     padding: 30px 90px;
+    font-size: 10pt;
 }
 
 p[role="contentinfo"] > a {
