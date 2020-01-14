@@ -35,7 +35,12 @@ h2 {
 h3 {
     color: black;
     font-family: Roboto;
-    font-size: 12pt;
+    font-size: 10pt;
+    letter-spacing: 0px;
+}
+
+#zen-preamble h3, #zen-explanation h3, #zen-requirements h3 {
+    padding-bottom: 15px;
 }
 
 abbr {
@@ -53,7 +58,7 @@ a:hover {
 }
 
 header {
-    background-image: url('../img/koi.jpg');
+    background-image: url('../img/huntington.png');
     background-size: 100% auto, auto, auto, cover;
     background-repeat: no-repeat;
     height: 200px;
@@ -69,37 +74,47 @@ div.summary, div.preamble, div.explanation, div.requirements {
 
 div.participation, div.benefits {
     background-image: url('../img/bamboo.png');
-    background-color: darkseagreen;
+    background-color: #7ca57c;
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+#zen-participation p, #zen-benefits p {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: white;
+}
+
+#zen-participation abbr, #zen-benefits abbr {
+    color: #636363;
 }
 
 p {
     padding-bottom: 10px;
 }
 
-p.participation {
-    color: white;
-}
-
 p[role="contentinfo"] {
-    background-color: darkseagreen;
-    background-repeat: repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    /* display: inline-block; */
+    background-color: #7ca57c;
+    width: auto;
+    margin: 0;
+    padding: 30px 90px;
 }
 
-#contentinfo a {
+p[role="contentinfo"] > a {
     font-family: Satisfy;
-    font-size: 16pt;
+    font-size: 10pt;
+    color: white;
 }
 
 div[role="article"] {
     font-family: IBM Plex Mono;
     font-size: 8pt;
-    font-weight: lighter;
-    color: gray;
-    letter-spacing: 1px;
+    font-weight: normal;
+    color: #636363;
+    letter-spacing: 0px;
+    word-spacing: 1px;
     padding-left: 150px;
     padding-right: 150px;
     display: block;
