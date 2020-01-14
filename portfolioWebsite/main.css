@@ -1,0 +1,79 @@
+/* Color Theme Swatches in Hex */
+.White-Grey-Orange-Scheme,-main-background-hex { color: #D9D0C1; }
+.White-Grey-Orange-Scheme,-nav-background-hex { color: #F25C05; }
+.White-Grey-Orange-Scheme,-div-background-hex { color: #F27F1B; }
+.White-Grey-Orange-Scheme,-main-font-color-hex { color: #F0F0F2; }
+.White-Grey-Orange-Scheme,-grey-button-color-hex { color: #4F5359; }
+
+
+.Rustic-woodden-board-with-knots-and-nail-holes,-vintage--backgro-4-hex { color: #F28B66; }
+.Rustic-woodden-board-with-knots-and-nail-holes,-vintage--backgro-5-hex { color: #F2B4AE; }
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    background-color: #D9D0C1;
+    font-family: rubik;
+    font-size: medium;
+    text-align: center;
+    color: #F0F0F2;
+    text-shadow: 1px 1px 2px black;
+
+}
+a {
+    text-decoration: none;
+    color: #F0F0F2;
+}
+a:hover {
+    font-family: rubik-italic;
+}
+nav {
+    background-color: #F25C05;
+    color: #5E6D70;
+    height: 80px;
+
+    font-size: larger;
+}
+div {
+    background-color: #F27F1B;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 15px 60px 15px;
+}
+img {
+    margin: auto;
+}
+input {
+    color: black;
+}
+button {
+    color: black;
+}
+.list li {
+    display: inline-table;
+    text-shadow: 1px 1px 2px black;
+    padding: 13px 6px 13px;
+}
+.responseBox {
+    height: 25px;
+}
+.greyButton {
+    background-color: #4F5359;
+    color: white;
+    padding: 15px 0px 0px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+@font-face {
+    font-family: rubik;
+    src: url('src/rubik/Rubik-Regular.ttf');
+}
+@font-face {
+    font-family: rubik-italic;
+    src: url('src/rubik/Rubik-MediumItalic.ttf')
+}
