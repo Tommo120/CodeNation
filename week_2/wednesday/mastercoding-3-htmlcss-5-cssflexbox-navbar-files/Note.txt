@@ -1,0 +1,3 @@
+Mobile: 0-500 
+Small: 501-768
+Desktop: 769+
