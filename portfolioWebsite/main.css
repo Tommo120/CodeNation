@@ -9,10 +9,14 @@
 .Rustic-woodden-board-with-knots-and-nail-holes,-vintage--backgro-4-hex { color: #F28B66; }
 .Rustic-woodden-board-with-knots-and-nail-holes,-vintage--backgro-5-hex { color: #F2B4AE; }
 
-* {
+html {
     box-sizing: border-box;
-    margin: 0px;
 }
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: #D9D0C1;
     font-family: rubik;
@@ -20,60 +24,86 @@ body {
     text-align: center;
     color: #F0F0F2;
     text-shadow: 1px 1px 2px black;
+    margin: 0;
+}
 
-}
 a {
+    color: #f0f0f2;
+    font-weight: 100;
+    letter-spacing: 2px;
     text-decoration: none;
-    color: #F0F0F2;
+    background: rgb(79,83,89,0);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition:all 0.5s;
 }
+
 a:hover {
     font-family: rubik-italic;
+    background: rgb(79,83,89,0.5);
 }
-nav {
+
+.flex-nav ul {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
     background-color: #F25C05;
     color: #5E6D70;
-    height: 80px;
-
     font-size: larger;
 }
+
+.flex-nav li {
+    flex:auto;
+}
+
 div {
     background-color: #F27F1B;
     padding: 5px;
     border-radius: 10px;
     margin: 15px 60px 15px;
 }
+
 img {
-    margin: auto;
+    padding: auto;
 }
+
 input {
     color: black;
 }
+
 button {
     color: black;
 }
-.list li {
-    display: inline-table;
-    text-shadow: 1px 1px 2px black;
-    padding: 13px 6px 13px;
-}
+
 .responseBox {
     height: 25px;
 }
-.greyButton {
+
+.greyButton{
+    display: flex;
+    flex: auto;
     background-color: #4F5359;
     color: white;
-    padding: 15px 0px 0px;
-    height: 50px;
-    width: 150px;
+    min-width: 150px;
+    max-height: 70%;
+    border-radius: 15px;
     text-align: center;
+    line-height: 50px;
     text-decoration: none;
-    display: inline-block;
 }
+
 @font-face {
-    font-family: rubik;
+    font-family: 'rubik';
     src: url('src/rubik/Rubik-Regular.ttf');
 }
+
 @font-face {
-    font-family: rubik-italic;
+    font-family: 'rubik-italic';
     src: url('src/rubik/Rubik-MediumItalic.ttf')
 }
