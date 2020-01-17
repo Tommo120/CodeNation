@@ -1,0 +1,37 @@
+.square {
+    width: calc(100vw / 2);
+    height: calc(100vh / 2);
+    background-color: orange;
+    border-radius: 0%;
+    transition: all 2s;
+}
+
+.square:hover {
+    animation: sticker 3s alternate;
+    border-radius: 50%;
+    
+    /* transition: 2s; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes sticker {
+    0% {
+        filter: invert(0);
+        transform: rotateZ(0deg);
+    }
+    50% {
+        filter: invert(0.5);
+        transform: rotateZ(45deg);
+    }
+    100% {
+        filter: invert(1);
+        transform: rotateZ(90deg);
+    }
+}

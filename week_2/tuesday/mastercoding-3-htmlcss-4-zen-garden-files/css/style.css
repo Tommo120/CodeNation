@@ -4,7 +4,8 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
+    border: 0;
 }
 
 h1 {
@@ -18,18 +19,18 @@ h1 {
 }
 
 h2 {
-    /* display: inline-block; */
+    /* display: inline; */
     background: url(../img/zen.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 40%;
     font-family: Satisfy;
     font-size: 12pt;
     font-weight: 50;
     font-style: italic;
-    text-align: center;
-    justify-content: center;
     padding-left: 4%;
+    /* width: 100vw; */
+    margin-left: 42vw;
+    /* margin-right: -42vw; */
 }
 
 h3 {
@@ -37,6 +38,7 @@ h3 {
     font-family: Roboto;
     font-size: 10pt;
     letter-spacing: 0px;
+    padding-left: 150px;
 }
 
 #zen-preamble h3, #zen-explanation h3, #zen-requirements h3 {
@@ -71,9 +73,18 @@ header {
     align-content: center;
 }
 
-div.summary, div.preamble, div.explanation, div.requirements {
+div.summary, div.preamble, div.explanation {
     padding-top: 15px;
     padding-bottom: 15px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+div.requirements {
+    padding-top: 15px;
+    box-sizing: border-box;
+    border: 0px;
+    margin: 0px;
 }
 
 div.participation, div.benefits {
@@ -99,23 +110,9 @@ p {
     padding-bottom: 10px;
 }
 
-p[role="contentinfo"] {
-    display: block;
-    background-color: #7ca57c;
-    background-clip: border-box;
-    width: max-content;
-    margin: 0;
-    padding: 30px 90px;
-    font-size: 10pt;
-}
 
-p[role="contentinfo"] > a {
-    font-family: Satisfy;
-    font-size: 10pt;
-    color: white;
-}
 
-div[role="article"] {
+div[role="article"] > p {
     font-family: IBM Plex Mono;
     font-size: 8pt;
     font-weight: normal;
@@ -124,5 +121,158 @@ div[role="article"] {
     word-spacing: 1px;
     padding-left: 150px;
     padding-right: 150px;
+    margin: 0;
+    border: 0;
     display: block;
+}
+
+p[role="contentinfo"] {
+    background-color: #7ca57c;
+    background-repeat: repeat;
+    background-size: auto;
+    padding: 30px 90px;
+    box-sizing: border-box;
+    width: auto;
+    font-size: 10pt;
+    text-align: center;
+    color: lightgrey;
+}
+
+p[role="contentinfo"] > a {
+    font-family: Satisfy;
+    font-size: 20pt;
+    font-weight: lighter;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(29, 95, 95);
+    padding: 0;
+}
+
+i.fab {
+    font-size: 22px;
+    font-weight: 100;
+}
+
+
+footer > a {
+    color: white;
+    padding: 15px;
+}
+
+footer > a:hover {
+    color: grey;
+}
+
+.sidebar {
+    font-family: IBM Plex Mono;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    width: 100vw;
+}
+
+a.designer-name{
+    color: lightgrey;
+}
+
+.wrapper {
+    width: 100%;
+    font-size: 8pt;
+}
+
+.wrapper ul {
+    list-style: none;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+h3.archives, h3.select, h3.resources {
+    height: 0;
+    width: 0;
+    padding: 0;
+}
+
+div.design-selection {
+    background-color: rgb(234, 254, 234);
+}
+
+#design-selection ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    max-height: 300px; 
+}
+
+#design-selection ul > li {
+    min-height: 50px;
+    min-width: 50vw;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+
+div.design-archives {
+    background-color: rgb(234, 254, 234);
+    
+}
+
+#design-archives ul {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    width: 100vw;
+    min-height: 50px;
+}
+
+#design-archives ul > li {
+    color: lightgrey;
+    text-align: center;
+    min-width: 50vw;
+    min-height: 60px;
+    padding: 20px 0;
+    flex: 1 1 auto;
+}
+
+.select, .archives, .resources{
+    visibility: hidden;
+}
+
+div.zen-resources {
+    display: flex;
+    background-image: url('../img/bamboo.png');
+    background-color: #7ca57c;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    height: 120px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#zen-resources ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    color: grey;
+    flex: 1;
+}
+
+#zen-resources ul > li {
+    flex: 1;
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 15px 0px;
 }
