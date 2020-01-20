@@ -1,7 +1,7 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
-// Canvas
+// Ball Position
 var x = canvas.width/2;
 var y = canvas.height-30;
 
@@ -107,7 +107,6 @@ function checkEdgeCollisions() {
         else {
             alert("GAME OVER");
             document.location.reload();
-            clearInterval(interval); //Required for chrome to end the game
         }
     }
 }
@@ -124,7 +123,6 @@ function checkBlockCollisions() {
                     if(score == brickRowCount*brickColumnCount) {
                         alert("YOU WIN, CONGRATS!");
                         document.location.reload();
-                        clearInterval(inerval);
                     }
                 }
             }
@@ -143,6 +141,7 @@ function draw() {
     checkBlockCollisions();
     x += dx;
     y += dy;
+    requestAnimationFrame(draw);
 }
 
 document.addEventListener("keydown", keyDownHandler, false);
@@ -170,4 +169,4 @@ function keyUpHandler(e) {
         leftPressed = false;
 }
 
-var interval = setInterval(draw, 10);
+draw();

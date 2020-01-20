@@ -1,0 +1,25 @@
+* { padding: 0; margin: 0; }
+
+h1 {
+    display: flex;
+    align-self: center;
+}
+
+h2 {
+    display: flex;
+    align-self: center;
+}
+
+.play-button {
+    height: 75px;
+    font-size: 32pt;
+}
+
+div.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* width: 420px; */
+}
+
+canvas { background: #eee; display: block; margin: 0 auto; }

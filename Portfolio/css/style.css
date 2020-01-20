@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0;
+}
+
+div.parent-container {
+    background-color: red;
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+nav.main-nav {
+    background-color: #F26513;
+    flex: 1;
+    border-bottom: 3px solid #262122;
+    width: 100vw;
+    max-height: 15vh;
+    min-height: 65px;
+}
+
+div.side-title {
+    background-color: #4F5359;
+    flex: 1 1;
+    border-right: 3px solid #262122;
+    min-height: 100%;
+    min-width: 100px;
+    max-width: 150px;
+}
+
+div.main-content {
+    background-color: #F0F0F2;
+    flex: 1;
+}
