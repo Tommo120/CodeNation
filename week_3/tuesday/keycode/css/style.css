@@ -1,0 +1,33 @@
+* {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.sub-container {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1;
+    flex-direction: row;
+}
+
+div.display-box {
+    width: 33.3vw;
+    height: 150px;
+}
+
+h1 {
+    height: 30vh;
+    min-width: 100vw;
+    text-align: center;
+}
