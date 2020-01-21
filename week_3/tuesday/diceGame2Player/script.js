@@ -47,8 +47,7 @@ const rollDice = () => {
     playerScoreText.innerText = `SCORE: ${playerScore}`;
 
     if(num == 1) {
-        loseGame(1);
-        winGame(2);
+        resetScore(1);
     } else if (playerScore >= scoreToWin) {
         winGame(1);
         loseGame(2);
@@ -62,12 +61,18 @@ const rollDice2 = () => {
     playerScoreText2.innerText = `SCORE: ${playerScore2}`;
 
     if(num == 1) {
-        loseGame(2);
-        winGame(1);
+        resetScore(2);
     } else if (playerScore2 >= scoreToWin) {
         winGame(2);
         loseGame(1);
     }
+}
+
+const resetScore = (playerID) => {
+    if(playerID == 1)
+        playerScore = 0;
+    else if(playerID == 2)
+        playerScore2 = 0;
 }
 
 const switchPlayers = () => {

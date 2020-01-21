@@ -39,6 +39,8 @@ div.player1, div.player2 {
     justify-content: space-evenly;
     background-color: chocolate;
     margin: 10px;
+
+    
     /* align-items: center; */
     /* justify-items: center; */
 }
