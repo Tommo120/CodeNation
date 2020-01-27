@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Top Trumps!</title>
+</head>
+<body>
+    <div class="main">
+        <button class="play-button" id="play-button">PLAY</button>
+        <div class="player-container">
+            <div class="player1">
+                <h2>Player 1</h2>
+                <h3 class="instruction" id="p1Instruction"></h3>
+                <canvas width="300" height="450" class="card-display" id="player1-card">
+
+                </canvas>
+                <div class="player-buttons">
+                    <button class="draw" id="player1-draw">DRAW</button>
+                </div>
+                <h3 class="cards-remaining" id="player1-remaining"></h3>
+            </div>
+            <div class="player2">
+                <h2>Player 2</h2>
+                <h3 class="instruction" id="p2Instruction"></h3>
+                <canvas width="300" height="450" class="card-display" id="player2-card">
+
+                </canvas>
+                <div class="player-buttons">
+                    <button class="draw" id="player2-draw">DRAW</button>
+                </div>
+                <h3 class="cards-remaining" id="player2-remaining"></h3>
+            </div>
+        </div>
+        <h2 id="limbo-count">Cards in Limbo: 0</h2>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>

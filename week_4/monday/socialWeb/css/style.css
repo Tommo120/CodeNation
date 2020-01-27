@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+html {
+    background: #eeeeee; /* Old browsers */
+    background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.main-div {
+    background: #d2ff52; /* Old browsers */
+    background: -moz-linear-gradient(top,  #d2ff52 0%, #91e842 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #d2ff52 0%,#91e842 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #d2ff52 0%,#91e842 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 ); /* IE6-9 */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60vw;
+    min-width: 300px;
+    min-height: 40vh;
+    flex-grow: 1;
+    box-shadow: 8px 8px 4px darkgrey;
+
+    margin-top: 20vh;
+    padding-bottom: 20px;
+}
+
+div.login-div {
+    display: flex;
+    flex-grow: 0;
+    text-align: center;
+    background-color: inherit;
+    flex-direction: column;
+}
+
+input.username-input, input.password-input {
+    min-width: 150px;
+    max-width: 500px;
+    height: 20px;
+    flex-grow: 1;
+}
+
+button.login-button, button.register-button{
+    height: 25px;
+}

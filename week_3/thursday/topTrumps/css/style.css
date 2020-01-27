@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+html {
+    font-family: 'ubuntu';
+    background-color: burlywood;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+
+div.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.player-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+button.play-button {
+    width: 50vw;
+    height: 50px;
+}
+
+div.player1, div.player2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightsalmon;
+    width: 40%;
+    min-height: 60vh;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+canvas.card-display {
+    border: 2px solid grey;
+    background-color: white;
+    /* height: 500px; */
+    /* width: 300px; */
+}
+
+div.player-buttons {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+button.draw {
+    height: 50px;
+    width: 70%;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 2px dashed black;
+    width: 100%;
+    padding: 0;
+    height: 30px;
+    margin: 0;
+}
+
+h3 {
+    height: 20px;
+}

@@ -21,6 +21,7 @@ const play = () => {
     playerScoreText.innerText = "SCORE: 0";
     playerScore = 0;
     imageHolder.src = "";
+    playerStatus.innerText = "";
 }
 
 const rollDice = () => {
