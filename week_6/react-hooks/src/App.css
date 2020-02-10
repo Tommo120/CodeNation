@@ -1,0 +1,36 @@
+.body {
+  background-color: wheat;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie {
+  width: 450px;
+  height: 75px;
+  margin: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: moccasin;
+}
+
+.title {
+  margin: 0;
+  border: 0;
+  padding: 2px;
+  font-size: 14pt;
+}
+
+.year {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: grey;
+  font-weight: 400;
+}
